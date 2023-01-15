@@ -23,11 +23,11 @@
   <body>
     <header class="header">
       <div class="header-container container">
+        <a class="link" href="./"
+          ><span class="web">Web</span><span class="studio">Studio</span></a
+        >
         <nav class="nav-container">
-          <a class="link" href="./"
-            ><span class="web">Web</span><span class="studio">Studio</span></a
-          >
-          <ul class="nav">
+          <ul class="nav menu">
             <li class="item"><a class="link" href="./">Studio</a></li>
             <li class="item">
               <a class="link current-link" href="./portfolio.html">Portfolio</a>
@@ -35,7 +35,7 @@
             <li class="item"><a class="link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <ul class="contacts">
+        <ul class="contacts menu">
           <li class="item">
             <a class="link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -45,8 +45,101 @@
             <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
+
+        <!-- Mobile Modal -->
+
+        <div class="menu-hamburger">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="header-modal-hamburger"
+              width="32"
+              height="22"
+              aria-label="Turn on/off mobile memu"
+            >
+              <use
+                class="mobile-modal-hamburger"
+                href="./images/icons.svg#icon-charm_menu-hamburger"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              class="header-modal-close-black"
+              width="8"
+              height="8"
+              aria-label="Turn on/off mobile memu"
+            >
+              <use
+                class="mobile-icon-menu"
+                href="./images/icons.svg#icon-close-black"
+              ></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <ul class="nav">
+              <li class="item">
+                <a class="link current-link" href="./">Studio</a>
+              </li>
+              <li class="item">
+                <a class="link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="item"><a class="link" href="">Contacts</a></li>
+            </ul>
+            <div class="container-contacts">
+              <ul class="contacts">
+                <li class="item">
+                  <a class="link3" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="item">
+                  <a class="link3" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="modal-social-list-icon">
+                <li class="modal-social-list-item">
+                  <a href="" class="modal-social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="modal-social-list-item">
+                  <a href="" class="modal-social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="modal-social-list-item">
+                  <a href="" class="modal-social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="modal-social-list-item">
+                  <a href="" class="modal-social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
+
     <main>
       <section class="topics">
         <div class="container">
@@ -76,7 +169,6 @@
                     <img
                       src="./images/board1.jpg"
                       alt="Board with app's interfaces"
-                      width="360"
                     />
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -100,7 +192,6 @@
                     <img
                       src="./images/qrcode.jpg"
                       alt="Text on the violet background"
-                      width="360"
                     />
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -119,11 +210,7 @@
               <div class="product-img">
                 <div class="img">
                   <div class="overlay">
-                    <img
-                      src="./images/devices.jpg"
-                      alt="Mac's devices"
-                      width="360"
-                    />
+                    <img src="./images/devices.jpg" alt="Mac's devices" />
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -144,7 +231,6 @@
                     <img
                       src="./images/car.jpg"
                       alt="Car, man is holdang a steering wheel"
-                      width="360"
                     />
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -166,7 +252,6 @@
                     <img
                       src="./images/screen.jpg"
                       alt="The Moon illustration on the phone"
-                      width="360"
                     />
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -188,7 +273,6 @@
                     <img
                       src="./images/girl.jpg"
                       alt="The girl is smilling and take a phone"
-                      width="360"
                     />
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -210,7 +294,6 @@
                     <img
                       src="./images/board.jpg"
                       alt="The artical at Instagram"
-                      width="360"
                     />
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -232,7 +315,6 @@
                     <img
                       src="./images/oranges.jpg"
                       alt="Some fruits in the bag"
-                      width="360"
                     />
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -251,11 +333,7 @@
               <div class="product-img">
                 <div class="img">
                   <div class="overlay">
-                    <img
-                      src="./images/coffee.jpg"
-                      alt="A cup of cappuccino"
-                      width="360"
-                    />
+                    <img src="./images/coffee.jpg" alt="A cup of cappuccino" />
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -275,66 +353,70 @@
     </main>
     <footer class="footer">
       <div class="container footer-contaiter">
-        <div class="logo-container">
-          <a class="link" href="/"
-            ><span class="web-footer">Web</span
-            ><span class="studio-footer">Studio</span></a
-          >
-          <p class="footer-description">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
+        <div class="web-container">
+          <div class="logo-container">
+            <a class="link" href="/"
+              ><span class="web-footer">Web</span
+              ><span class="studio-footer">Studio</span></a
+            >
+            <p class="footer-description">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-social-media">
+            <h4 class="socil-media-title">Social media</h4>
+            <ul class="footer-social-list-icon">
+              <li class="footer-social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-social-media">
-          <h4 class="socil-media-title">Social media</h4>
-          <ul class="footer-social-list-icon">
-            <li class="footer-social-list-item">
-              <a href="" class="footer-social-list-link">
-                <svg class="social-list-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+        <div class="form-container">
+          <form class="footer-form">
+            <p class="label-header">Subscribe</p>
+            <div class="display">
+              <label name="email" class="footer-label">
+                <input type="email" placeholder="E-mail" name="E-mail" />
+              </label>
+              <button class="footer-button" type="submit">
+                <span class="subscribe">Subscribe</span>
+                <svg class="svg-frame" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Frame"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="footer-social-list-item">
-              <a href="" class="footer-social-list-link">
-                <svg class="social-list-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list-item">
-              <a href="" class="footer-social-list-link">
-                <svg class="social-list-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list-item">
-              <a href="" class="footer-social-list-link">
-                <svg class="social-list-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </button>
+            </div>
+          </form>
         </div>
-        <form class="footer-form">
-          <p class="label-header">Subscribe</p>
-          <div class="display">
-          <label name="email" class="footer-label">
-            <span class="footer-email">E-mail</span>
-            <input type="email" name="E-mail"/>
-          </label>
-          <button class="footer-button" type="submit">
-            <span class="subscribe">Subscribe</span>
-            <svg class="svg-frame" width="24" height="24">
-              <use href="./images/icons.svg#icon-Frame"></use>
-            </svg>
-          </button>
-        </div>
-        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
