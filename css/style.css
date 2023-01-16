@@ -284,11 +284,11 @@ h3 {
   color: var(--heading-text-color);
 }
 
-.item a.link3:hover {
-  font-weight: 600;
+.tel {
+  font-weight: 500;
   font-size: 36px;
   line-height: 1.1;
-  text-transform: capitalize;
+  text-decoration: none;
   color: #4d5ae5;
 }
 
@@ -934,7 +934,7 @@ input:focus ~ .svg-modal {
 .section4 {
   background-color: var(--light-text-color);
   padding-top: 96px;
-  padding-bottom: 96px;
+  padding-bottom: 128px;
 }
 
 .section4 .header2 {
@@ -1010,11 +1010,22 @@ input:focus ~ .svg-modal {
     row-gap: 64px;
   }
 
+  .section4 {
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
+
   .team-description {
     width: 264px;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section4 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
 /* Section5 */
 
 .section5 {
@@ -1169,7 +1180,7 @@ input:focus ~ .svg-modal {
   margin-right: auto;
 }
 
-.socil-media-title {
+.social-media-title {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1351,7 +1362,7 @@ button {
     margin: 0;
   }
 
-  .socil-media-title {
+  .social-media-title {
     text-align: start;
   }
 
@@ -1417,6 +1428,7 @@ button {
   .web-container {
     display: flex;
     flex-direction: row;
+    margin-bottom: 72px;
   }
 
   .footer-contaiter {
@@ -1430,12 +1442,13 @@ button {
     margin-bottom: 0;
   }
 
-  .socil-media-title {
+  .social-media-title {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     color: var(--basic-bakground-color);
+    text-align: start;
   }
 
   .footer-social-list-icon {
